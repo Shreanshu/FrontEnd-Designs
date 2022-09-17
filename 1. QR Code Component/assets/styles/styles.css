@@ -1,0 +1,123 @@
+:root {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* ----------------------- Desktop View ----------------------- */
+#main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding-top: 8%;
+    padding-bottom: 1%;
+    background-color: #d6e2f0;
+    box-sizing: border-box;
+}
+
+/* Card */
+#main #component {
+    width: 20%;
+    height: 80%;
+    margin: auto;
+    padding-top: 1%;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: -1px 3px 5px 0px rgb(92, 92, 92);
+    box-sizing: border-box;
+    transition: 0.4s;
+}
+/* QR Code */
+#main #component #qr-code {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#main #component #qr-code img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Card Content */
+#main #component #content {
+    width: 80%;
+    height: 40%;
+    margin: auto;
+}
+
+#main #component h2 {
+    width: 100%;
+    margin: 8% auto;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #1f3251;
+}
+
+#main #component p {
+    width: 100%;
+    margin: auto;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #7b879d;
+}
+
+#main #component:hover {
+    transform: scale(1.02);
+    transition: 0.4s;
+}
+
+
+
+/* ----------------------- Tablet View ----------------------- */
+@media screen and (max-width: 992px) {
+    :root {
+        font-size: 4vw;
+    }
+
+    #main {
+        padding-top: 10%;
+    }
+
+    /* Card */
+    #main #component {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding-top: 4%;
+        padding-bottom: 10%;
+        border-radius: 14px;
+    }
+}
+
+
+
+/* ----------------------- Mobile View ----------------------- */
+@media screen and (max-width: 375px) {
+    :root {
+        font-size: 4vw;
+    }
+
+    #main {
+        padding-bottom: 10%;
+    }
+
+    /* Card */
+    #main #component {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding-top: 4%;
+        padding-bottom: 10%;
+        border-radius: 14px;
+    }
+}
